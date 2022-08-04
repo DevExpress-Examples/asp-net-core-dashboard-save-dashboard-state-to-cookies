@@ -1,3 +1,7 @@
+<!-- default badges list -->
+![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/520044055/21.2.8%2B)
+[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
+<!-- default badges end -->
 # Dashboard for ASP.NET Core - How to save a dashboard state to cookies
 
 The example shows how to save the current dashboard state (such as master filter or parameter values) to cookies on the client side and restore this state on the server side.
