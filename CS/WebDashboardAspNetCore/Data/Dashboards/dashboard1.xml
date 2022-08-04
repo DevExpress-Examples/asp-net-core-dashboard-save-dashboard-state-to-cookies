@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard>
+  <Title Text="Dashboard" />
+  <DataSources>
+	<SqlDataSource ComponentName="DataSource1">
+		<Name>SalesPerson1</Name>
+      <Connection Name="sqliteConnection" FromAppConfig="true" />
+      <Query Type="SelectQuery" Name="SalesPerson1">
+        <Tables>
+          <Table Name="SalesPerson" />
+        </Tables>
+        <Columns>
+			<AllColumns Table="SalesPerson" />
+		</Columns>
+      </Query>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+  </DataSources>
+	<Items>
+		<Grid ComponentName="gridDashboardItem1" Name="Grid 1" DataSource="DataSource1" DataMember="SalesPerson1">
+			<InteractivityOptions MasterFilterMode="Multiple" />
+			<DataItems>
+				<Dimension DataMember="CategoryName" DefaultId="DataItem0" />
+				<Measure DataMember="ExtendedPrice" DefaultId="DataItem1" />
+			</DataItems>
+			<GridColumns>
+				<GridDimensionColumn>
+					<Dimension DefaultId="DataItem0" />
+				</GridDimensionColumn>
+				<GridMeasureColumn>
+					<Measure DefaultId="DataItem1" />
+				</GridMeasureColumn>
+			</GridColumns>
+			<GridOptions />
+		</Grid>
+		<Chart ComponentName="chartDashboardItem1" Name="Chart 1" DataSource="DataSource1" DataMember="SalesPerson1">
+			<InteractivityOptions MasterFilterMode="Multiple" />
+			<DataItems>
+				<Measure DataMember="ExtendedPrice" DefaultId="DataItem0" />
+				<Dimension DataMember="OrderDate" DefaultId="DataItem1" />
+				<Dimension DataMember="Country" DefaultId="DataItem2" />
+			</DataItems>
+			<SeriesDimensions>
+				<SeriesDimension DefaultId="DataItem2" />
+			</SeriesDimensions>
+			<Arguments>
+				<Argument DefaultId="DataItem1" />
+			</Arguments>
+			<Panes>
+				<Pane Name="Pane 1">
+					<Series>
+						<Simple>
+							<Value DefaultId="DataItem0" />
+						</Simple>
+					</Series>
+				</Pane>
+			</Panes>
+		</Chart>
+		<RangeFilter ComponentName="rangeFilterDashboardItem1" Name="RangeFilter 1" DataSource="DataSource1" DataMember="SalesPerson1">
+			<DataItems>
+				<Measure DataMember="ExtendedPrice" DefaultId="DataItem0" />
+				<Dimension DataMember="OrderDate" DateTimeGroupInterval="MonthYear" DefaultId="DataItem1" />
+			</DataItems>
+			<Argument DefaultId="DataItem1" />
+			<Series>
+				<Simple SeriesType="Line">
+					<Value DefaultId="DataItem0" />
+				</Simple>
+			</Series>
+		</RangeFilter>
+	</Items>
+	<LayoutTree>
+		<LayoutGroup Orientation="Vertical" Weight="100">
+			<LayoutGroup Weight="166.96028853309923">
+				<LayoutItem DashboardItem="gridDashboardItem1" Weight="60.265633646928606" />
+				<LayoutGroup Orientation="Vertical" Weight="139.73436635307138">
+					<LayoutItem DashboardItem="chartDashboardItem1" Weight="139.73436635307138" />
+				</LayoutGroup>
+			</LayoutGroup>
+			<LayoutItem DashboardItem="rangeFilterDashboardItem1" Weight="72.774077819972149" />
+		</LayoutGroup>
+	</LayoutTree>
+</Dashboard>
