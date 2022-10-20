@@ -18,7 +18,7 @@ The [DashboardControlOptions.onDashboardStateChanged](https://docs.devexpress.co
 The [DashboardConfigurator.SetDashboardStateService](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.DashboardConfigurator.SetDashboardStateService(DevExpress.DashboardWeb.IDashboardStateService)) method
 specifies a service that allows you to manage a dashboard state. In this service, the [HttpRequest.Cookies](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httprequest.cookies) property gets a collection of cookies sent by the client.
 
-## Files to Look At
+## Files to Review
 
 * [CustomDashboardStateService.cs](./CS/WebDashboardAspNetCore/CustomDashboardStateService.cs)
 * [Startup.cs](./CS/WebDashboardAspNetCore/Startup.cs#L39)
