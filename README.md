@@ -21,8 +21,8 @@ specifies a service that allows you to manage a dashboard state. In this service
 ## Files to Review
 
 * [CustomDashboardStateService.cs](./CS/WebDashboardAspNetCore/CustomDashboardStateService.cs)
-* [Startup.cs](./CS/WebDashboardAspNetCore/Startup.cs#L39)
-* [Index.cshtml](./CS/WebDashboardAspNetCore/Views/Home/Index.cshtml)
+* [Program.cs](./CS/WebDashboardAspNetCore/Code/DashboardUtils.cs#L21)
+* [Index.cshtml](./CS/WebDashboardAspNetCore/Pages/Index.cshtml)
 * [Script.js](./CS/WebDashboardAspNetCore/wwwroot/js/Script.js)
 
 ## Documentation
