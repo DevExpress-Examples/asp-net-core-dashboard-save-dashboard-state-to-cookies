@@ -9,7 +9,6 @@ using Microsoft.Extensions.FileProviders;
 namespace WebDashboardAspNetCore {
     public static class DashboardUtils {
         public static DashboardConfigurator CreateDashboardConfigurator(IConfiguration configuration, IFileProvider fileProvider, IHttpContextAccessor? contextAccessor) {
-            
 
             DashboardConfigurator configurator = new DashboardConfigurator();
             configurator.SetConnectionStringsProvider(new DashboardConnectionStringsProvider(configuration));
