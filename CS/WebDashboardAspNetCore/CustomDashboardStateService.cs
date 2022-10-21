@@ -7,12 +7,12 @@ using System.Xml.Linq;
 
 namespace WebDashboardAspNetCore {
     public class CustomDashboardStateService : IDashboardStateService {
-        IHttpContextAccessor contextAccessor;
-        public CustomDashboardStateService(IHttpContextAccessor contextAccessor) {
+        IHttpContextAccessor? contextAccessor;
+        public CustomDashboardStateService(IHttpContextAccessor? contextAccessor) {
             this.contextAccessor = contextAccessor;
         }
-        public DashboardState GetState(string dashboardId, XDocument dashboard) {
-            var cookie = contextAccessor.HttpContext?.Request.Cookies["dashboardState"];
+        public DashboardState? GetState(string dashboardId, XDocument dashboard) {
+            var cookie = contextAccessor?.HttpContext?.Request.Cookies["dashboardState"];
             if (cookie != null) {
                 DashboardState dashboardState = new DashboardState();
                 dashboardState.LoadFromJson(HttpUtility.UrlDecode(cookie));

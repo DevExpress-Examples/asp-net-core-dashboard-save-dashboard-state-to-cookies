@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29403.142
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDashboardAspNetCore", "WebDashboardAspNetCore\WebDashboardAspNetCore.csproj", "{36E139CA-076D-4BDE-A446-82AE58CCDEFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDashboardAspNetCore", "WebDashboardAspNetCore\WebDashboardAspNetCore.csproj", "{8B3AA784-B317-4241-9F61-B8B89FCF9C8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{36E139CA-076D-4BDE-A446-82AE58CCDEFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{36E139CA-076D-4BDE-A446-82AE58CCDEFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{36E139CA-076D-4BDE-A446-82AE58CCDEFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{36E139CA-076D-4BDE-A446-82AE58CCDEFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3AA784-B317-4241-9F61-B8B89FCF9C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3AA784-B317-4241-9F61-B8B89FCF9C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3AA784-B317-4241-9F61-B8B89FCF9C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3AA784-B317-4241-9F61-B8B89FCF9C8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {01672CB1-7A2C-416F-A69C-5A7BA7DFA696}
+		SolutionGuid = {A1B8019D-5AEE-4243-AE92-9D30BECA0400}
 	EndGlobalSection
 EndGlobal

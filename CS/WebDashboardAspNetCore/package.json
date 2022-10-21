@@ -1,12 +1,11 @@
 {
-  "version": "1.0.0",
-  "name": "asp.net",
-  "private": true,
-  "license": "MIT",
-  "devDependencies": {
-    "devextreme": "21.2-stable",
-    "@devexpress/analytics-core": "21.2-stable",
-    "devexpress-dashboard": "21.2-stable",
-    "jquery-ui-dist": "^1.13.0"
-  }
+    "name": "webdashboardaspnetcore",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "devextreme": "22.1.5",
+        "@devexpress/analytics-core": "22.1.5",
+        "devexpress-dashboard": "22.1.5",
+        "jquery-ui-dist": "^1.12.1"
+    }
 }

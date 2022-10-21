@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dashboard>
-  <Title Text="Dashboard" />
-  <DataSources>
-	<SqlDataSource ComponentName="DataSource1">
-		<Name>SalesPerson1</Name>
-      <Connection Name="sqliteConnection" FromAppConfig="true" />
-      <Query Type="SelectQuery" Name="SalesPerson1">
-        <Tables>
-          <Table Name="SalesPerson" />
-        </Tables>
-        <Columns>
-			<AllColumns Table="SalesPerson" />
-		</Columns>
-      </Query>
-      <ConnectionOptions CloseConnection="true" />
-    </SqlDataSource>
-  </DataSources>
+	<Title Text="Dashboard" />
+	<DataSources>
+		<SqlDataSource ComponentName="DataSource1">
+			<Name>SalesPerson1</Name>
+			<Connection Name="sqliteConnection" FromAppConfig="true" />
+			<Query Type="SelectQuery" Name="SalesPerson1">
+				<Tables>
+					<Table Name="SalesPerson" />
+				</Tables>
+				<Columns>
+					<AllColumns Table="SalesPerson" />
+				</Columns>
+			</Query>
+			<ConnectionOptions CloseConnection="true" />
+		</SqlDataSource>
+	</DataSources>
 	<Items>
 		<Grid ComponentName="gridDashboardItem1" Name="Grid 1" DataSource="DataSource1" DataMember="SalesPerson1">
 			<InteractivityOptions MasterFilterMode="Multiple" />
