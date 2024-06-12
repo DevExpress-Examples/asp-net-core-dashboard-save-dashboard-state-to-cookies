@@ -13,5 +13,5 @@ function onDashboardStateChanged(e) {
     // Get the dashboard state:
     let dState = "dashboardState=" + encodeURIComponent(e.component.getDashboardState()) + ";";
     // Assign the cookie name (dashboardState), the cookie value, and the expires string to document.cookie:
-    document.cookie = dState + expires + ";path=" + encodeURIComponent("/");
+    document.cookie = dState + expires + ";path=/";
 }
